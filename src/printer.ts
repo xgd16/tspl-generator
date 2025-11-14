@@ -91,6 +91,17 @@ export class TSPLPrinter {
   }
 
   /**
+   * Set a custom command
+   * 
+   * @param command - The command to set
+   * @returns The printer instance for method chaining
+   */
+  public setCommand(command: string): this { 
+    this.buffer += command;
+    return this;
+  }
+
+  /**
    * Add a text block to the label
    * @param x - X coordinate
    * @param y - Y coordinate
